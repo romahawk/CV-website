@@ -273,6 +273,51 @@ body {
     line-height: 1.8;
 }
 
+.about__list {
+    list-style: none;
+    margin: 1rem 0;
+    padding-left: 0;
+}
+
+.about__list li {
+    color: #a0b0c0;
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.about__list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: #00ddeb;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 221, 235, 0.5);
+}
+
+/* Remove the cyan dot for list items with tech-icon */
+.about__list li:has(.tech-icon) {
+    padding-left: 0;
+}
+
+.about__list li:has(.tech-icon)::before {
+    content: none;
+}
+.about__quote {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: rgba(10, 26, 47, 0.9);
+    border-left: 4px solid #00ddeb;
+    border-radius: 4px;
+    font-style: italic;
+    color: #e0e0e0;
+    box-shadow: 0 0 10px rgba(0, 221, 235, 0.3);
+}
+
 /* Timeline */
 .about__timeline {
     margin-top: 2rem;
