@@ -105,3 +105,28 @@ document.addEventListener('DOMContentLoaded', () => {
     timelineContainer.addEventListener('scroll', updateArrowVisibility);
     updateArrowVisibility(); // Initial check
 });
+
+// Project Filter Functionality
+const filterButtons = document.querySelectorAll('.projects__filter-btn');
+const projectCategories = document.querySelectorAll('.projects__category');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+
+        // Update active button
+        filterButtons.forEach(btn => btn.classList.remove('projects__filter-btn--active'));
+        button.classList.add('projects__filter-btn--active');
+
+        // Show/hide categories
+        projectCategories.forEach(category => {
+            if (filter === 'all') {
+                category.style.display = 'block';
+            } else if (category.querySelector('.projects__grid').classList.contains(`projects__grid--${filter}`)) {
+                category.style.display = 'block';
+            } else {
+                category.style.display = 'none';
+            }
+        });
+    });
+});
