@@ -43,98 +43,204 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Me Section -->
     <section id="about" class="section">
         <h2 class="section__title">> About Me</h2>
         <div class="about__container">
-            <!-- Profile Image Placeholder -->
-            <div class="about__image">
-                <img src="https://placehold.co/200x200?text=Profile+Image" alt="Profile Image" class="about__img">
-            </div>
-            <!-- About Content -->
-            <div class="about__content">
-                <div class="about__item">
+            <!-- Row 1: Photo and My MedTech Journey -->
+            <div class="about__row about__row--two-columns">
+                <div class="about__photo">
+                    <div class="about__photo-placeholder">Profile Image</div>
+                </div>
+                <div class="about__text">
                     <h3 class="about__subtitle">My MedTech Journey</h3>
-                    <p>For over a decade, I’ve been immersed in the MedTech industry, where I’ve worn many hats—driving sales for cutting-edge medical equipment, streamlining B2B and B2C supply chains, providing hands-on support to surgeons, and even prototyping innovative solutions for startups. That journey taught me how to solve real-world problems with precision and empathy, but it also sparked a new passion: technology.</p>
+                    <p>
+                        For over a decade, I’ve been immersed in the MedTech industry, where I’ve worn many hats—driving sales for cutting-edge medical equipment, streamlining B2B and B2C supply chains, providing hands-on support to surgeons, and even prototyping innovative solutions for startups. That journey taught me how to solve real-world problems with precision and empathy, but it also sparked a new passion: technology.
+                    </p>
                 </div>
-                <div class="about__item">
-                    <h3 class="about__subtitle">Why I’m Pivoting to Tech</h3>
-                    <p>I’m now pivoting into the tech world, fueled by a desire to build solutions that bridge my MedTech expertise with the limitless possibilities of software. I’m motivated by the chance to create tools that not only solve problems but also transform lives—whether that’s through smarter analytics, seamless user experiences, or innovative platforms. Right now, I’m diving deep into Python, web development (HTML, CSS, JavaScript), data analytics, and project management, with plans to master React and Tailwind CSS next.</p>
-                </div>
-                <div class="about__item">
-                    <h3 class="about__subtitle">My Values & Vision</h3>
-                    <p>My core values—innovation, education, and continuous growth—guide everything I do. I believe in pushing boundaries, learning every day, and evolving with the ever-changing tech landscape. Looking ahead, I envision a future where I combine my MedTech insights, tech skills, and startup mindset to create impactful solutions—think healthcare platforms powered by AI, data-driven MedTech innovations, or even my own tech startup.</p>
-                </div>
-                <div class="about__item">
-                    <h3 class="about__subtitle">Let’s Collaborate</h3>
-                    <p>I’m driven, curious, and always open to collaboration. Whether you’re in MedTech, tech, or somewhere in between, I’d love to connect and explore how we can build the future together.</p>
-                </div>
-                <blockquote class="about__quote">
-                    “My business journey taught me resilience, leadership, and the importance of solving real-world problems — the same mindset I bring into tech today.”
-                </blockquote>
-                <div class="about__item">
-                    <h3 class="about__subtitle">Beyond Tech: What Drives Me</h3>
-                    <p>Life isn’t just about code — here’s what energizes and inspires me:</p>
-                    <ul class="about__list">
-                        <li>
-                            <span class="tech-icon"><i class="fas fa-basketball-ball"></i> Basketball</span> — My lifelong passion. Player, coach, and student of the game.
-                        </li>
-                        <li>
-                            <span class="tech-icon"><i class="fas fa-volleyball-ball"></i> Beach Volleyball</span> — Sand, sun, and strategy.
-                        </li>
-                        <li>
-                            <span class="tech-icon"><i class="fas fa-hiking"></i> Hiking</span> — Love exploring new trails and staying grounded in nature.
-                        </li>
-                        <li>
-                            <span class="tech-icon"><i class="fas fa-plane"></i> Travel</span> — Curious about new cultures, food, and ideas.
-                        </li>
-                        <li>
-                            <span class="tech-icon"><i class="fas fa-book"></i> Lifelong Learner</span> — Always building, improving, and growing.
-                        </li>
-                    </ul>
-                    <blockquote class="about__quote">
-                        “Basketball taught me teamwork, strategy, and discipline — qualities I now apply to building projects and collaborating in tech.”
-                    </blockquote>
-                </div>
+            </div>
+            <!-- Row 2: Why I’m Pivoting to Tech -->
+            <div class="about__row">
+                <h3 class="about__subtitle">Why I’m Pivoting to Tech</h3>
+                <p>
+                    I’m now pivoting into the tech world, fueled by a desire to build solutions that bridge my MedTech expertise with the limitless possibilities of software. I’m motivated by the chance to create tools that not only solve problems but also transform lives—whether that’s through smarter analytics, seamless user experiences, or innovative platforms. Right now, I’m diving deep into Python, web development (HTML, CSS, JavaScript), data analytics, and project management, with plans to master React and Tailwind CSS next.
+                </p>
+            </div>
+            <!-- Row 3: My Values & Vision -->
+            <div class="about__row">
+                <h3 class="about__subtitle">My Values & Vision</h3>
+                <p>
+                    My core values—innovation, education, and continuous growth—guide everything I do. I believe in pushing boundaries, learning every day, and evolving with the ever-changing tech landscape. Looking ahead, I envision a future where I combine my MedTech insights, tech skills, and startup mindset to create impactful solutions—think healthcare platforms powered by AI, data-driven MedTech innovations, or even my own tech startup.
+                </p>
+            </div>
+            <!-- Row 4: Let’s Collaborate -->
+            <div class="about__row">
+                <h3 class="about__subtitle">Let’s Collaborate</h3>
+                <p>
+                    I’m driven, curious, and always open to collaboration. Whether you’re in MedTech, tech, or somewhere in between, I’d love to connect and explore how we can build something impactful together.
+                </p>
             </div>
         </div>
-        <!-- Timeline -->
-        <div class="about__timeline">
-            <h3 class="about__subtitle">My Journey</h3>
-            <div class="timeline">
-                <div class="timeline__item">
-                    <span class="timeline__year">2011</span>
-                    <p>Installed Ukraine’s first Electrophysiology (EP) lab with CR BARD (now Boston Scientific)</p>
+    </section>
+
+    <!-- Timeline -->
+    <!-- My Journey Section -->
+    <section id="journey" class="section">
+        <h2 class="section__title">> My Journey</h2>
+        <div class="timeline">
+            <div class="timeline__controls">
+                <button class="timeline__sort-btn" aria-label="Toggle timeline sort order">
+                    Sort: Newest First <i class="fas fa-arrow-down"></i>
+                </button>
+            </div>
+            <button class="timeline__scroll-btn timeline__scroll-btn--left" aria-label="Scroll left">←</button>
+            <div class="timeline__container">
+                <!-- 2025 -->
+                <div class="timeline__item" data-year="2025">
+                    <h3 class="timeline__year">2025</h3>
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <ul class="timeline__highlights">
+                            <li>Built personal portfolio website</li>
+                            <li>Expanded into full-stack & project management track</li>
+                            <li>Tech & MedTech job search</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="timeline__item">
-                    <span class="timeline__year">2013</span>
-                    <p>Introduced SURGIRIS LED surgical lights in Ukraine’s private healthcare sector</p>
+                <!-- 2024 -->
+                <div class="timeline__item timeline__item--highlight" data-year="2024">
+                    <h3 class="timeline__year">2024 <i class="fas fa-laptop"></i></h3>
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <ul class="timeline__highlights">
+                            <li>Relocated to Germany 🇩🇪</li>
+                            <li>Began career pivot to IT (GoIT, DataCamp, Python projects)</li>
+                            <li>Joined PHA (pharma distribution)</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="timeline__item">
-                    <span class="timeline__year">2015</span>
-                    <p>Installed the first Oxyhealth Fortius hyperbaric chamber in Ukraine</p>
+                <!-- 2023 -->
+                <div class="timeline__item" data-year="2023">
+                    <h3 class="timeline__year">2023</h3>
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <ul class="timeline__highlights">
+                            <li>Delivered SURGIRIS LED surgical lights to new branch of Ukraine’s largest private clinic</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="timeline__item">
-                    <span class="timeline__year">2016-2017</span>
-                    <p>Integrated SURGIRIS surgical field lights and video systems in private clinics and public hospitals</p>
+                <!-- 2022 -->
+                <div class="timeline__item" data-year="2022">
+                    <h3 class="timeline__year">2022</h3>
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <ul class="timeline__highlights">
+                            <li>Volunteered during war to supply medical equipment (e.g., SURGIRIS to Bucha, VAC therapy devices)</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="timeline__item">
-                    <span class="timeline__year">2018–2021</span>
-                    <p>Implemented Surgimedia integrated OR systems for neurosurgery & endoscopy</p>
+                <!-- 2021 -->
+                <div class="timeline__item" data-year="2021">
+                    <h3 class="timeline__year">2021</h3>
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <ul class="timeline__highlights">
+                            <li>Built PoC of Livesurgery — surgeon education & collaboration platform</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="timeline__item">
-                    <span class="timeline__year">2020</span>
-                    <p>Developed Livesurgery – a remote surgical collaboration platform (startup prototype)<br>Started prototyping innovative MedTech solutions for the Ukrainian market</p>
+                <!-- 2020–2021 -->
+                <div class="timeline__item" data-year="2020">
+                    <h3 class="timeline__year">2020–2021</h3>
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <ul class="timeline__highlights">
+                            <li>Installed SURGIMEDIA integrated OR systems for neurosurgery, endoscopy, imaging</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="timeline__item">
-                    <span class="timeline__year">2022</span>
-                    <p>Volunteered to supply SURGIRIS surgical lights to a war-damaged hospital in Bucha<br>Supported humanitarian MedTech aid during wartime</p>
+                <!-- 2019–2020 -->
+                <div class="timeline__item" data-year="2019">
+                    <h3 class="timeline__year">2019–2020</h3>
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <ul class="timeline__highlights">
+                            <li>Launched new MedTech products in Ukraine (e.g., R. WOLF Urology shockwave therapy, ACCUVEIN vein finder)</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="timeline__item">
-                    <span class="timeline__year">2024</span>
-                    <p>Pivoted into Tech:<br>→ Started Python & Web Development (DataCamp, GoIT)<br>→ Projects: Smarthooper AI, Supply Tracker, Website Redesign<br>→ Began building personal brand in Tech + MedTech</p>
+                <!-- 2018 -->
+                <div class="timeline__item" data-year="2018">
+                    <h3 class="timeline__year">2018</h3>
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <ul class="timeline__highlights">
+                            <li>Installed Ukraine’s first compact SURGIMEDIA system (OR audio/video integration)</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 2017 -->
+                <div class="timeline__item" data-year="2017">
+                    <h3 class="timeline__year">2017</h3>
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <ul class="timeline__highlights">
+                            <li>Installed SURGIRIS gas pendants in ICU and ORs</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 2016 -->
+                <div class="timeline__item" data-year="2016">
+                    <h3 class="timeline__year">2016</h3>
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <ul class="timeline__highlights">
+                            <li>Upgraded ORs with SURGIRIS LED lights featuring surgical field video integration</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 2015 -->
+                <div class="timeline__item" data-year="2015">
+                    <h3 class="timeline__year">2015</h3>
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <ul class="timeline__highlights">
+                            <li>Installed Ukraine’s first OxyHealth Fortius 420 hyperbaric chamber</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 2013 -->
+                <div class="timeline__item" data-year="2013">
+                    <h3 class="timeline__year">2013</h3>
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <ul class="timeline__highlights">
+                            <li>Delivered SURGIRIS LED lights to a major private clinic</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 2011 -->
+                <div class="timeline__item" data-year="2011">
+                    <h3 class="timeline__year">2011</h3>
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <ul class="timeline__highlights">
+                            <li>Installed Ukraine’s first EP lab for CR BARD (now Boston Scientific)</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 2010 -->
+                <div class="timeline__item timeline__item--highlight" data-year="2010">
+                    <h3 class="timeline__year">2010 <i class="fas fa-rocket"></i></h3>
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <ul class="timeline__highlights">
+                            <li>Started entrepreneurial journey in medical equipment sales, supply, installation, and support</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+            <button class="timeline__scroll-btn timeline__scroll-btn--right" aria-label="Scroll right">→</button>
         </div>
     </section>
 
@@ -172,34 +278,199 @@
     <!-- Projects Section -->
     <section id="projects" class="section">
         <h2 class="section__title">> Projects</h2>
-        <div class="projects__grid">
-            <div class="project-card">
-                <h3 class="project-card__title">Smarthooper AI</h3>
-                <p class="project-card__desc">A Python-based tool for MedTech analytics (WIP).</p>
-                <div class="project-card__tech">
-                    <span class="tech-icon"><i class="devicon-python-plain"></i> Python</span>
+        <!-- Tech Projects -->
+        <div class="projects__category">
+            <h3 class="projects__subtitle">🧠 Tech Projects</h3>
+            <div class="projects__grid projects__grid--tech">
+                <div class="project-card">
+                    <h3 class="project-card__title">Smarthooper AI</h3>
+                    <p class="project-card__desc">AI-driven app designed to support young basketball athletes in skill development, training recommendations, and performance tracking.<br><strong>Goal:</strong> Build a prototype to combine my passion for basketball and tech.</p>
+                    <div class="project-card__tech">
+                        <span class="tech-icon"><i class="devicon-python-plain"></i> Python</span>
+                        <span class="tech-icon"><i class="devicon-opencv-plain"></i> OpenCV</span>
+                        <span class="tech-icon tech-icon--future"><i class="devicon-react-original"></i> React (future)</span>
+                        <span class="tech-icon tech-icon--future"><i class="devicon-flask-original"></i> Flask (future)</span>
+                    </div>
+                    <a href="#" class="project-card__link">Learn More</a>
                 </div>
-                <a href="#" class="project-card__link">Learn More</a>
+                <div class="project-card">
+                    <h3 class="project-card__title">Quarterly Supply Plan Tracker</h3>
+                    <p class="project-card__desc">A Python-based internal web tool (prototype) for visualizing and tracking pharmaceutical supply plans.<br><strong>Built for:</strong> PHA<br><strong>Features:</strong> CSV import, status tracker, timeline chart (future: dashboard, alerts)</p>
+                    <div class="project-card__tech">
+                        <span class="tech-icon"><i class="devicon-python-plain"></i> Python</span>
+                        <span class="tech-icon"><i class="devicon-pandas-plain"></i> Pandas</span>
+                        <span class="tech-icon"><i class="devicon-plotly-plain"></i> Plotly</span>
+                        <span class="tech-icon"><i class="devicon-streamlit-plain"></i> Streamlit</span>
+                    </div>
+                    <a href="#" class="project-card__link">Learn More</a>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-card__title">OSTA Website Redesign</h3>
+                    <p class="project-card__desc">Redesign of a B2B pharmaceutical distribution company’s website (OSTA Trading GmbH).<br><strong>Phases:</strong> HTML/CSS → React conversion → CMS integration → Multi-language support</p>
+                    <div class="project-card__tech">
+                        <span class="tech-icon"><i class="devicon-html5-plain"></i> HTML</span>
+                        <span class="tech-icon"><i class="devicon-css3-plain"></i> CSS</span>
+                        <span class="tech-icon"><i class="devicon-javascript-plain"></i> JavaScript</span>
+                        <span class="tech-icon"><i class="devicon-react-original"></i> React</span>
+                        <span class="tech-icon tech-icon--future"><i class="devicon-wordpress-plain"></i> WordPress (future)</span>
+                    </div>
+                    <a href="#" class="project-card__link">Learn More</a>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-card__title">Developer Portfolio Website</h3>
+                    <p class="project-card__desc">A modern personal website to showcase my transition from MedTech to IT.<br><strong>Features:</strong> Timeline, MedTech projects, Tech stack, CV download, and contact form</p>
+                    <div class="project-card__tech">
+                        <span class="tech-icon"><i class="devicon-html5-plain"></i> HTML</span>
+                        <span class="tech-icon"><i class="devicon-css3-plain"></i> CSS</span>
+                        <span class="tech-icon"><i class="devicon-javascript-plain"></i> JavaScript</span>
+                        <span class="tech-icon tech-icon--future"><i class="devicon-react-original"></i> React (future)</span>
+                        <span class="tech-icon tech-icon--future"><i class="devicon-tailwindcss-plain"></i> Tailwind CSS (future)</span>
+                    </div>
+                    <a href="#" class="project-card__link">Learn More</a>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-card__title">Livesurgery (Startup Prototype)</h3>
+                    <p class="project-card__desc">Concept-stage MedTech EdTech platform to enable live surgical collaboration and case sharing.<br><strong>Status:</strong> PoC developed, accepted to startup incubator<br><strong>Role:</strong> Founder & PM</p>
+                    <div class="project-card__tech">
+                        <span class="tech-icon tech-icon--future"><i class="devicon-webrtc-plain"></i> WebRTC (future)</span>
+                        <span class="tech-icon tech-icon--future"><i class="devicon-firebase-plain"></i> Firebase (future)</span>
+                        <span class="tech-icon tech-icon--future"><i class="devicon-react-original"></i> React (future)</span>
+                    </div>
+                    <a href="#" class="project-card__link">Learn More</a>
+                </div>
             </div>
-            <div class="project-card">
-                <h3 class="project-card__title">Supply Tracker</h3>
-                <p class="project-card__desc">Inventory management system for B2B MedTech.</p>
-                <div class="project-card__tech">
-                    <span class="tech-icon"><i class="devicon-html5-plain"></i> HTML</span>
-                    <span class="tech-icon"><i class="devicon-css3-plain"></i> CSS</span>
-                    <span class="tech-icon"><i class="devicon-javascript-plain"></i> JavaScript</span>
-                    <span class="tech-icon"><i class="devicon-mysql-plain"></i> MySQL</span>
+        </div>
+        <!-- MedTech Projects -->
+        <div class="projects__category">
+            <h3 class="projects__subtitle">🔬 MedTech Projects & Achievements</h3>
+            <p class="projects__intro">Over a decade leading complex medical equipment installations and innovation introductions across Ukraine.</p>
+            <div class="projects__grid projects__grid--medtech">
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <span class="project-card__icon"><i class="fas fa-hospital"></i></span>
+                        <h3 class="project-card__title">SURGIRIS Surgical Lights Projects</h3>
+                    </div>
+                    <p class="project-card__desc">
+                        Led the installation of SURGIRIS LED surgical lights with video integration in Ukraine’s top private clinics (2013, 2016, 2023), ensuring compliance with CE and local standards. Coordinated with clinicians and hospital executives for seamless integration. Delivered a volunteer project in 2022, supplying lights to a war-damaged hospital in Bucha under challenging crisis logistics.
+                    </p>
+                    <div class="project-card__tech">
+                        <span class="tech-icon">
+                            <svg class="tech-icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M9 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2h-3m-4 0V1a1 1 0 011-1h2a1 1 0 011 1v1m-6 5h6m-6 4h6m-6 4h6" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                            Project Management
+                        </span>
+                        <span class="tech-icon"><i class="fas fa-file-excel"></i> Excel</span>
+                        <span class="tech-icon"><i class="fas fa-file-powerpoint"></i> PowerPoint</span>
+                        <span class="tech-icon"><i class="fas fa-truck"></i> Logistics</span>
+                    </div>
+                    <a href="#" class="project-card__link">Learn More</a>
                 </div>
-                <a href="#" class="project-card__link">Learn More</a>
-            </div>
-            <div class="project-card">
-                <h3 class="project-card__title">Surgiris</h3>
-                <p class="project-card__desc">Supported surgical equipment sales and training.</p>
-                <div class="project-card__tech">
-                    <span class="tech-icon"><i class="devicon-salesforce-plain"></i> Salesforce</span>
-                    <span class="tech-icon"><i class="devicon-windows8-plain"></i> Microsoft Office</span>
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <span class="project-card__icon"><i class="fas fa-video"></i></span>
+                        <h3 class="project-card__title">SURGIMEDIA OR Integration Systems</h3>
+                    </div>
+                    <p class="project-card__desc">
+                        Introduced SURGIMEDIA systems for real-time OR video/audio integration in 2018, managing end-to-end delivery from planning to installation across neurosurgery, endoscopy, and diagnostics. Conducted hands-on training for clinicians to ensure effective use of the systems.
+                    </p>
+                    <div class="project-card__tech">
+                        <span class="tech-icon">
+                            <svg class="tech-icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M9 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2h-3m-4 0V1a1 1 0 011-1h2a1 1 0 011 1v1m-6 5h6m-6 4h6m-6 4h6" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                            Project Management
+                        </span>
+                        <span class="tech-icon"><i class="fas fa-file-excel"></i> Excel</span>
+                        <span class="tech-icon"><i class="fas fa-file-powerpoint"></i> PowerPoint</span>
+                        <span class="tech-icon"><i class="fas fa-video"></i> Video Integration</span>
+                    </div>
+                    <a href="#" class="project-card__link">Learn More</a>
                 </div>
-                <a href="#" class="project-card__link">Learn More</a>
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <span class="project-card__icon"><i class="fas fa-lungs"></i></span>
+                        <h3 class="project-card__title">Medical Gas Pendants & ICU Equipment</h3>
+                    </div>
+                    <p class="project-card__desc">
+                        Managed the 2017 installation of SURGIRIS ceiling pendants for ICU and ORs, overseeing procurement planning, budgeting, and logistics. Scheduled maintenance and technical support to ensure long-term reliability.
+                    </p>
+                    <div class="project-card__tech">
+                        <span class="tech-icon">
+                            <svg class="tech-icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M9 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2h-3m-4 0V1a1 1 0 011-1h2a1 1 0 011 1v1m-6 5h6m-6 4h6m-6 4h6" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                            Project Management
+                        </span>
+                        <span class="tech-icon"><i class="fas fa-file-excel"></i> Excel</span>
+                        <span class="tech-icon"><i class="fas fa-file-powerpoint"></i> PowerPoint</span>
+                        <span class="tech-icon"><i class="fas fa-truck"></i> Logistics</span>
+                    </div>
+                    <a href="#" class="project-card__link">Learn More</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <span class="project-card__icon"><i class="fas fa-microscope"></i></span>
+                        <h3 class="project-card__title">ACCUVEIN, ECHOLIGHT, R.WOLF</h3>
+                    </div>
+                    <p class="project-card__desc">
+                        Introduced innovative devices to the Ukrainian market, including ACCUVEIN vein visualization, ECHOLIGHT portable bone densitometer, and R.WOLF ESWL for urology. Evaluated vendors for clinical applications and represented products at trade shows and medical congresses to drive adoption.
+                    </p>
+                    <div class="project-card__tech">
+                        <span class="tech-icon">
+                            <svg class="tech-icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M9 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2h-3m-4 0V1a1 1 0 011-1h2a1 1 0 011 1v1m-6 5h6m-6 4h6m-6 4h6" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                            Project Management
+                        </span>
+                        <span class="tech-icon"><i class="fas fa-file-excel"></i> Excel</span>
+                        <span class="tech-icon"><i class="fas fa-file-powerpoint"></i> PowerPoint</span>
+                        <span class="tech-icon"><i class="devicon-salesforce-plain"></i> CRM</span>
+                    </div>
+                    <a href="#" class="project-card__link">Learn More</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <span class="project-card__icon"><i class="fas fa-compress-arrows-alt"></i></span>
+                        <h3 class="project-card__title">OxyHealth Hyperbaric Chamber</h3>
+                    </div>
+                    <p class="project-card__desc">
+                        Spearheaded the first installation of an OxyHealth Fortius 420 hyperbaric chamber in Ukraine in 2015, a pioneering project in the region. Coordinated with clinicians, engineers, and vendors to ensure successful integration and compliance with regulatory standards.
+                    </p>
+                    <div class="project-card__tech">
+                        <span class="tech-icon">
+                            <svg class="tech-icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M9 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2h-3m-4 0V1a1 1 0 011-1h2a1 1 0 011 1v1m-6 5h6m-6 4h6m-6 4h6" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                            Project Management
+                        </span>
+                        <span class="tech-icon"><i class="fas fa-file-excel"></i> Excel</span>
+                        <span class="tech-icon"><i class="fas fa-file-powerpoint"></i> PowerPoint</span>
+                        <span class="tech-icon"><i class="fas fa-truck"></i> Logistics</span>
+                    </div>
+                    <a href="#" class="project-card__link">Learn More</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <span class="project-card__icon"><i class="fas fa-heartbeat"></i></span>
+                        <h3 class="project-card__title">First EP Lab in Ukraine</h3>
+                    </div>
+                    <p class="project-card__desc">
+                        Led the installation of Ukraine’s first electrophysiology (EP) lab in 2011 with CR BARD (now Boston Scientific), a landmark project in the country. Liaised with international manufacturers and conducted technical demos to support adoption by hospital stakeholders.
+                    </p>
+                    <div class="project-card__tech">
+                        <span class="tech-icon">
+                            <svg class="tech-icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M9 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2h-3m-4 0V1a1 1 0 011-1h2a1 1 0 011 1v1m-6 5h6m-6 4h6m-6 4h6" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                            Project Management
+                        </span>
+                        <span class="tech-icon"><i class="fas fa-file-excel"></i> Excel</span>
+                        <span class="tech-icon"><i class="fas fa-file-powerpoint"></i> PowerPoint</span>
+                        <span class="tech-icon"><i class="fas fa-truck"></i> Logistics</span>
+                    </div>
+                    <a href="#" class="project-card__link">Learn More</a>
+                </div>
             </div>
         </div>
     </section>
@@ -221,9 +492,123 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>© 2025 Your Name. All rights reserved.</p>
+        <p>© <span id="current-year">2025</span> Roman Mazuryk. All rights reserved.</p>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const timelineContainer = document.querySelector('.timeline__container');
+            const timelineItems = document.querySelectorAll('.timeline__item');
+            const sortBtn = document.querySelector('.timeline__sort-btn');
+            const leftBtn = document.querySelector('.timeline__scroll-btn--left');
+            const rightBtn = document.querySelector('.timeline__scroll-btn--right');
+            let isAscending = false;
+    
+            // Function to calculate and set the timeline width
+            const updateTimelineWidth = () => {
+                const itemWidth = timelineItems[0].getBoundingClientRect().width;
+                const gap = parseFloat(getComputedStyle(timelineContainer).gap) || 0;
+                const totalItems = timelineItems.length;
+                const totalGaps = totalItems - 1;
+                const totalWidth = (totalItems * itemWidth) + (totalGaps * gap);
+                timelineContainer.style.setProperty('--timeline-width', `${totalWidth}px`);
+                return itemWidth;
+            };
+    
+            // Function to update arrow visibility based on scroll position
+            const updateArrowVisibility = () => {
+                const scrollLeft = timelineContainer.scrollLeft;
+                const maxScroll = timelineContainer.scrollWidth - timelineContainer.clientWidth;
+    
+                leftBtn.style.opacity = scrollLeft <= 0 ? '0' : '1';
+                leftBtn.style.pointerEvents = scrollLeft <= 0 ? 'none' : 'auto';
+                rightBtn.style.opacity = scrollLeft >= maxScroll - 1 ? '0' : '1';
+                rightBtn.style.pointerEvents = scrollLeft >= maxScroll - 1 ? 'none' : 'auto';
+            };
+    
+            // Initial width calculation and arrow visibility
+            let itemWidth = updateTimelineWidth();
+            updateArrowVisibility();
+    
+            // Recalculate width and update arrows on window resize
+            window.addEventListener('resize', () => {
+                itemWidth = updateTimelineWidth();
+                updateArrowVisibility();
+            });
+    
+            // Update arrow visibility on scroll
+            timelineContainer.addEventListener('scroll', updateArrowVisibility);
+    
+            // Navigation arrows functionality
+            document.querySelector('.timeline__scroll-btn--left').addEventListener('click', () => {
+                timelineContainer.scrollBy({ left: -itemWidth, behavior: 'smooth' });
+            });
+    
+            document.querySelector('.timeline__scroll-btn--right').addEventListener('click', () => {
+                timelineContainer.scrollBy({ left: itemWidth, behavior: 'smooth' });
+            });
+    
+            // Sorting functionality
+            sortBtn.addEventListener('click', () => {
+                isAscending = !isAscending;
+                sortBtn.textContent = isAscending ? 'Sort: Oldest First' : 'Sort: Newest First';
+    
+                const itemsArray = Array.from(timelineItems);
+                itemsArray.sort((a, b) => {
+                    const yearA = parseInt(a.getAttribute('data-year'));
+                    const yearB = parseInt(b.getAttribute('data-year'));
+                    return isAscending ? yearA - yearB : yearB - yearA;
+                });
+    
+                timelineContainer.innerHTML = '';
+                itemsArray.forEach(item => timelineContainer.appendChild(item));
+    
+                updateTimelineWidth();
+                timelineContainer.scrollTo({ left: 0, behavior: 'smooth' });
+                updateArrowVisibility();
+            });
+    
+            // Random Hero Background Image
+            const heroSection = document.querySelector('.hero');
+            const heroImages = [
+                'assets/img/hero-bg-1.jpg',
+                'assets/img/hero-bg-2.jpg',
+                'assets/img/hero-bg-3.jpg',
+                'assets/img/hero-bg-4.jpg'
+            ];
+            const randomImage = heroImages[Math.floor(Math.random() * heroImages.length)];
+            heroSection.style.backgroundImage = `linear-gradient(135deg, rgba(10, 26, 47, 0.8), rgba(30, 58, 95, 0.8)), url('${randomImage}')`;
+    
+            // Back to Top Button Functionality
+            const backToTopBtn = document.querySelector('.back-to-top');
+    
+            // Show/hide button based on scroll position
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTopBtn.classList.add('back-to-top--visible');
+                } else {
+                    backToTopBtn.classList.remove('back-to-top--visible');
+                }
+            });
+    
+            // Scroll to top when button is clicked
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+    
+            // Update Footer Year Automatically
+            const currentYearSpan = document.getElementById('current-year');
+            const currentYear = new Date().getFullYear();
+            currentYearSpan.textContent = currentYear;
+        });
+    </script>
+
     <script src="./assets/js/script.js"></script>
+    
 </body>
 </html>

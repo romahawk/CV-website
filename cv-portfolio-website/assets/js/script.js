@@ -88,3 +88,20 @@ if (canvas && ctx && heroSection) {
 } else {
     console.error('Canvas, context, or Hero section not found.');
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const timelineContainer = document.querySelector('.timeline__container');
+    const leftBtn = document.querySelector('.timeline__scroll-btn--left');
+    const rightBtn = document.querySelector('.timeline__scroll-btn--right');
+
+    const updateArrowVisibility = () => {
+        const scrollLeft = timelineContainer.scrollLeft;
+        const maxScroll = timelineContainer.scrollWidth - timelineContainer.clientWidth;
+
+        leftBtn.style.display = scrollLeft <= 0 ? 'none' : 'block';
+        rightBtn.style.display = scrollLeft >= maxScroll - 1 ? 'none' : 'block';
+    };
+
+    timelineContainer.addEventListener('scroll', updateArrowVisibility);
+    updateArrowVisibility(); // Initial check
+});
